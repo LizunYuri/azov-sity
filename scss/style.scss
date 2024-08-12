@@ -1,0 +1,347 @@
+@import "variables";
+@import "reset";
+@import "navHoverEffect";
+
+
+.header{
+    width: 100%;
+    min-height: 100px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    &-body{
+        @include block-beetwen;
+        &-logotype{
+            &-img{
+                @include block-center;
+                img{
+                    width: 45px;
+                    height: 35px;
+                    object-fit: cover;
+                    margin-right: 13px;
+                    margin-left: 13px;
+                }
+                &>.title{
+                    position: relative;
+                    min-height: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    &> .line{
+                        width: 140%;
+                        min-width: 100px;
+                        height: 2px;
+                        margin-top: 5px;
+                        margin-left: -23px;
+                        background: rgba(23, 78, 91, .6);
+                        border-radius: 50%;
+                    }
+                }
+                p{
+                    font-family: 'Comfortaa';
+                    color: rgba(23, 78, 91, .8);
+                    font-weight: 500;
+                    font-size: 19px;
+                    margin-left: 1px;
+                }
+            }
+        }
+        &-decktop{
+            @include block-center;
+            flex-direction: row;
+            &-block{
+                padding-right: 21pt;
+                &:last-child{
+                    padding-right: 0;
+                }
+                p{
+                    font-size: 8pt;
+                    font-weight: 300;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: right;
+                }
+                a{
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                &> button{
+                    height: 46px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    border-radius: 14px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    letter-spacing: 0.40px;
+                    text-align: center;
+                    color: $color-white;
+                    background: $color-title;
+                    transition: all .5s ease;
+                    &:hover{
+                        filter: blur(1px) saturate(30%);
+                        transform: scale(1.01);
+                    }
+                }
+            }
+        }
+        &-mobil{
+            display: none;
+            &> .burger{
+                width: 50px;
+                height: 50px;
+                @include block-beetwen;
+                flex-direction: column;
+                justify-content: space-around;
+                cursor: pointer;
+                &> .toggle{
+                    width: 100%;
+                    height: 5px;
+                    background: $color-text;
+                    border-radius: 20%;
+                }
+            }
+        }
+    }
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 720px;
+    background: $color-grey;
+    &-left{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        &> h1{
+            @include subtitle;
+        }
+        h2{
+            font-family: 'Comfortaa';
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 70.4px;
+            text-align: left;
+            color: $color-title;
+            padding-top: 23px;
+            padding-bottom: 23px;
+        }
+        & > p{
+            font-family: "Golos";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $color-text;
+            padding-right: 66px;
+            padding-bottom: 46px;
+        }
+        &> button{
+            color: $color-title;
+            font-family: "Golos";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: left;
+            padding-bottom: 7px;
+        }
+    }
+    & > .right{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+
+.home-img-media{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.firm{
+    margin-top: 105px;
+    margin-bottom: 105px;
+
+    & .container > .row{
+        justify-content: center;
+    }
+    h3{
+        font-family: 'Comfortaa';
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        text-align: left;
+    }
+    &-block{
+        margin-top: 45px;
+        h4{
+            font-family: "Golos";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $color-title;
+            margin-bottom: 16px;
+        }
+        p{
+            font-family: "Golos";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-text;
+        }
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    &-boss{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 45px;
+        &-img{
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            border: 3px solid rgba(206, 196, 188, 1);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        &-text{
+            margin-left: 30px;
+            &> .name{
+                font-family: "Golos";
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: left;
+                color: $color-title;
+            }
+            &> .jobtitle{
+                padding-top: 7px;
+                font-family: "Comfortaa";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                text-align: left;
+                color: $color-text;
+            }
+        }
+    }
+}
+
+.redding{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/4.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 105px;
+    &-buster{
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .5);
+        // backdrop-filter: blur(2px);
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h4{
+            width: 80%;
+            @include subtitle;
+             filter:contrast(300%);
+        }
+        & > a{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            color: $color-text;
+            filter:contrast(300%);
+        }
+    }
+}
+
+.process{
+    h4{
+        text-align: center;
+        @include subtitle;
+    }
+    p{
+        font-family: "Golos";
+        font-size: 39px;
+        font-weight: 400;
+        line-height: 42px;
+        text-align: center;
+        padding-top: 43px;
+    }
+    &-steps{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 46px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &-step{
+        margin-top: 46px;
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > h5{
+            font-family: "Golos";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: center;
+            color: $color-title;
+            margin-top: 23px;
+        }
+        & > p{
+            font-family: "Golos";
+            width: 300px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: $color-text;
+        }
+    }
+}
+
+.btn-hover-effect{
+    position: relative;
+    transition: all .3s ease;
+}
+
+.btn-hover-effect::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-text;
+    transition: width 0.3s ease;
+}
+
+.btn-hover-effect:hover::after {
+    width: 100%;
+}
+
+@import "media";

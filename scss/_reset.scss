@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Golos";
+}
+
+a{
+    text-decoration: none;
+    border: none;
+    color: $color-title;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul, li{
+    list-style: none;
+}
+
+input, button{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: $color-white;
+}
