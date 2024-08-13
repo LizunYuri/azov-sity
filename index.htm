@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/741d6d6a0a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loadPageAnimation.css">
     <title>АкваТехПласт | Строительство бассейнов для гостиниц</title>
 </head>
 <body>
@@ -45,12 +47,12 @@
     </header>
     <main>
         <section class="home" id="home">
-            <div class="right">
+            <div class="right fade-in-right-start" id="home-right">
                 <img class="home-img-media" src="./img/6.jpg" alt="first">
             </div>
             <div class="container height-100">
                 <div class="row height-100">
-                    <div class="col-lg-6 col-md-12 height-100 home-left">
+                    <div id="home-left" class="col-lg-6 col-md-12 height-100 home-left fade-in-left-start">
                         <div class="header-body-mobil" id="mobil">
                             <div class="burger">
                                 <div class="toggle"></div>
@@ -63,9 +65,9 @@
                         <p>Современный гостиничный бизнес стремится предлагать своим клиентам нечто большее, чем просто уютные номера и хорошее обслуживание. Чтобы выделиться на фоне конкурентов и привлечь больше гостей, владельцам отелей стоит задуматься о создании уникальной атмосферы и повышении комфорта для своих клиентов. Одним из лучших решений в этом плане станет строительство бассейна.</p>
                         <button class="btn-hover-effect">Узнать подробнее...</button>
                     </div>
-                    <div class="col-lg-6 col-md-12 height-100 height-right">
+                    <!-- <div class="col-lg-6 col-md-12 height-100 height-right">
                         <img class="home-img-media" src="./img/6.jpg" alt="first">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -233,53 +235,168 @@
                     <div class="projects-block-project">
                         <div class="face face1 face-img1"></div>
                         <div class="face face2 face-img1">
-                            <h6>1</h6>
-                            <p>2</p>
+                            <!-- <h6>1</h6>
+                            <p>2</p> -->
                         </div>
                     </div>
                     <div class="projects-block-project">
                         <div class="face face1 face-img2"></div>
                         <div class="face face2 face-img2">
-                          <h6>1</h6>
-                          <p>2</p>
+                          <!-- <h6>1</h6>
+                          <p>2</p> -->
                         </div>
                     </div>
                     <div class="projects-block-project">
                         <div class="face face1 face-img3"></div>
                         <div class="face face2 face-img3">
-                            <h6>1</h6>
-                            <p>2</p>
+                            <!-- <h6>1</h6>
+                            <p>2</p> -->
                         </div>
                     </div>
                     <div class="projects-block-project">
                         <div class="face face1 face-img4"></div>
                         <div class="face face2 face-img4">
-                            <h6>1</h6>
-                            <p>2</p>
+                            <!-- <h6>1</h6>
+                            <p>2</p> -->
                         </div>
                     </div>
                     <div class="projects-block-project">
                         <div class="face face1 face-img5"></div>
                         <div class="face face2 face-img5">
-                            <h6>1</h6>
-                            <p>2</p>
+                            <!-- <h6>1</h6>
+                            <p>2</p> -->
                         </div>
                     </div>
                     <div class="projects-block-project">
                         <div class="face face1 face-img6"></div>
                         <div class="face face2 face-img6">
-                            <h6>1</h6>
-                            <p>2</p>
+                            <!-- <h6>1</h6>
+                            <p>2</p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="team" id="team"></section>
+        <section class="team" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <h6>Строительство бассейна в гостинице</h6>
+                        <p>Инвестиция, которая принесет вам множество преимуществ. От повышения конкурентоспособности до увеличения доходов и улучшения отзывов гостей – бассейн станет неотъемлемой частью вашего успеха.</p>
+                        <button class="btn-hover-effect">Оставить заявку...</button>
+                    </div>
+                    <div class="col-lg-9 col-md-12 team-card">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="team-card-body">
+                                    <div class="team-card-body-icon">
+                                        <div class="team-card-body-icon-check">
+                                            <i class="fa-solid fa-check"></i>  
+                                        </div>
+                                        <h6>Индивидуальный подход</h6>
+                                    </div>
+                                    <p>Каждый проект уникален, и мы учитываем все пожелания клиента, особенности участка и бюджет</p>
+                                </div>
+                                <div class="team-card-body">
+                                    <div class="team-card-body-icon">
+                                        <div class="team-card-body-icon-check">
+                                            <i class="fa-solid fa-check"></i>  
+                                        </div>
+                                        <h6>Работа "под ключ"</h6>
+                                    </div>
+                                    <p>Мы предлагаем полный цикл услуг — от проектирования до сдачи готового бассейна. Вам не придется беспокоиться о дополнительных задачах или подрядчиках.</p>
+                                </div>
+                                <div class="team-card-body">
+                                    <div class="team-card-body-icon">
+                                        <div class="team-card-body-icon-check">
+                                            <i class="fa-solid fa-check"></i>  
+                                        </div>
+                                        <h6>Простота эксплуатации</h6>
+                                    </div>
+                                    <p>Установленные нами системы фильтрации и очистки воды делают эксплуатацию бассейна максимально простой и минимизируют время, затрачиваемое на его обслуживание.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="team-card-body">
+                                    <div class="team-card-body-icon">
+                                        <div class="team-card-body-icon-check">
+                                            <i class="fa-solid fa-check"></i>  
+                                        </div>
+                                        <h6>Прозрачность и честность</h6>
+                                    </div>
+                                    <p>Все этапы работы и расходы согласовываются заранее, и вы всегда будете в курсе того, на что тратите свои деньги. Никаких скрытых платежей или неожиданных изменений в смете.</p>
+                                </div>
+                                <div class="team-card-body">
+                                    <div class="team-card-body-icon">
+                                        <div class="team-card-body-icon-check">
+                                            <i class="fa-solid fa-check"></i>  
+                                        </div>
+                                        <h6>Доверие и положительная репутация</h6>
+                                    </div>
+                                    <p>Положительные отзывы и рекомендации — это лучшее подтверждение качества наших услуг. Обращаясь к нам, вы выбираете надежного партнера, которому можно доверить свой проект.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <section class="touch" id="touch">
+            <div class="container touch-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="touch-content-title">
+                            <h6>Акватехпласт</h6>
+                            <p>Если вы все еще сомневаетесь, стоит ли строить бассейн или нет, просто...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 touch-content-title">
+                        <div class="touch-link">
+                            <a class="btn-hover-effect" href="tel:+7 938 479-63-01">Позвоните нам</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
+    <footer class="footer" id="footer">
+        <div class="container height-100">
+            <div class="row height-100">
+                <div class="col-lg-6 col-md-12 footer-left">
+                    <a class="footer-link" href="https://poolkuban.ru">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 footer-right">
+                    <div class="footer-right-address">
+                        <p><strong>ИП Чечеткин В.В.</strong></p>
+                        <p><strong>ИНН</strong>344603568845</p>
+                        <br>
+                        <p><strong>Наш адрес:</strong> г. Краснодар,</p>
+                        <p>ул. Симферопольская, д.62, оф. 212</p>
+                    </div>
+                    <div class="footer-right-links">
+                        <a class="circle" href="https://wa.me/79384796301">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a class="circle" href="#">
+                           <i class="fa-brands fa-telegram"></i> 
+                        </a>
+                        <a class="circle" href="mailto:bassein23@yandex.ru">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="circle to-top" id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="./script/scrollToTop.js"></script>
+    <script src="./script/loadPageAnimation.js"></script>
     <script src="./script/hoverNavEffect.js"></script>
-    <script src="./script/fadeAnimation.js"></script>
-    <script src="./script/loaderAnimation.js"></script>
 </body>
 </html>
 

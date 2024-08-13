@@ -664,7 +664,6 @@ body {
   border-radius: 6px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer;
   margin-bottom: 26px;
 }
 
@@ -794,8 +793,309 @@ body {
 
 .team {
   margin-top: 92px;
+  padding-bottom: 92px;
+}
+.team h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  color: rgb(27, 26, 26);
+  padding-top: 46px;
+}
+.team p {
+  color: rgb(64, 62, 59);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-top: 23px;
+  padding-bottom: 46px;
+}
+.team-card {
+  padding-left: 46px;
+}
+.team-card-body {
+  padding-top: 23px;
+  padding-left: 23px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+.team-card-body p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: rgb(64, 62, 59);
+}
+.team-card-body-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team-card-body-icon-check {
+  margin-right: 26px;
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgb(206, 196, 188);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team-card-body-icon-check i {
+  color: rgb(206, 196, 188);
+  font-size: 35px;
+}
+.team-card-body-icon h6 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(27, 26, 26);
+  margin: 0;
+  padding: 0;
 }
 
+.touch {
+  width: 100%;
+  min-height: 314px;
+  background: rgb(206, 196, 188);
+}
+.touch-content {
+  min-height: 314px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.touch-content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.touch-content-title h6 {
+  font-family: "Golos";
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: rgb(100, 92, 85);
+  text-transform: uppercase;
+}
+.touch-content-title p {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+}
+.touch-content-title a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.400000006px;
+  text-align: left;
+  color: rgb(64, 62, 59);
+}
+.touch-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer {
+  min-height: 204px;
+  width: 100%;
+  background: rgb(247, 247, 247);
+}
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.footer-link {
+  margin-top: 46px;
+  width: 150px;
+  height: 80px;
+  display: block;
+}
+.footer-link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+.footer-right {
+  margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.footer-right strong {
+  font-family: "Golos";
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: rgb(100, 92, 85);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer-right p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.400000006px;
+}
+.footer-right-links {
+  margin-top: 23px;
+  margin-bottom: 46px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid rgb(206, 196, 188);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 23px;
+}
+.circle i {
+  font-size: 20px;
+  color: rgb(206, 196, 188);
+}
+
+.to-top {
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: pulse 3s infinite linear;
+          animation: pulse 3s infinite linear;
+  display: none;
+}
+.to-top:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: invert(100%) contrast(200%);
+          filter: invert(100%) contrast(200%);
+}
+
+.to-top-block {
+  display: block;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: invert(50%) contrast(150%);
+            filter: invert(50%) contrast(150%);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: invert(50%) contrast(150%);
+            filter: invert(50%) contrast(150%);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+}
 @media (max-width: 1024px) {
   .header {
     display: none;
@@ -850,6 +1150,9 @@ body {
     top: 10px;
     right: 20px;
   }
+  .home-img-media {
+    display: block;
+  }
   .home > .right {
     display: none;
   }
@@ -864,5 +1167,22 @@ body {
   }
   .display-visible {
     display: none;
+  }
+  .team-card {
+    margin-top: 46px;
+  }
+  .touch-link {
+    margin-top: 46px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 46px;
+  }
+  .footer-right-links {
+    width: 100%;
+  }
+  .to-top {
+    bottom: 50px;
+    left: 20px;
   }
 }
