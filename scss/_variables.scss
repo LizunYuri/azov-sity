@@ -56,3 +56,18 @@ $color-white: rgba(255, 255, 255, 1);
 .display-visilble{
     display: block;
 }
+
+@mixin bg-block{
+    width: 100%;
+    height: 600px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 105px;
+    &-buster{
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .5);
+        // backdrop-filter: blur(2px);
+    }
+}

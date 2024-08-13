@@ -40,9 +40,10 @@ a {
   color: rgb(27, 26, 26);
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  font-family: "Golos";
 }
 
 ol, ul, li {
@@ -240,6 +241,7 @@ body {
   background: rgb(236, 231, 228);
 }
 .home-left {
+  height: 720px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,11 +397,11 @@ body {
 .redding {
   width: 100%;
   height: 600px;
-  background-image: url(../img/4.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 105px;
+  background-image: url(../img/4.jpg);
 }
 .redding-buster {
   width: 100%;
@@ -423,6 +425,7 @@ body {
 }
 .redding-body h4 {
   width: 80%;
+  margin-bottom: 23px;
   font-family: "Golos";
   font-size: 14px;
   letter-spacing: 2px;
@@ -452,7 +455,6 @@ body {
   text-transform: uppercase;
 }
 .process p {
-  font-family: "Golos";
   font-size: 39px;
   font-weight: 400;
   line-height: 42px;
@@ -491,7 +493,6 @@ body {
           align-items: center;
 }
 .process-step > h5 {
-  font-family: "Golos";
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -500,13 +501,171 @@ body {
   margin-top: 23px;
 }
 .process-step > p {
-  font-family: "Golos";
   width: 300px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: rgb(64, 62, 59);
+}
+
+.marble {
+  width: 100%;
+  height: 600px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 105px;
+  background-position: bottom left;
+  margin-bottom: 0;
+  background-image: url(../img/5.jpg);
+}
+.marble-buster {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.prior {
+  width: 100%;
+  background: rgb(64, 62, 59);
+}
+.prior-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+.prior-body h5 {
+  font-family: "Golos";
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: rgb(100, 92, 85);
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.prior-body h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  min-width: 300px;
+}
+.prior-body p {
+  padding-top: 46px;
+  max-width: 451px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.prior-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.prior-img-partner {
+  max-height: 100px;
+  margin-top: 46px;
+  margin-bottom: 46px;
+  height: 100px;
+  display: block;
+}
+.prior-img-partner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swirling {
+  width: 100%;
+  height: 600px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 105px;
+  background-position: center;
+  margin-bottom: 0;
+  background-image: url(../img/7.jpg);
+}
+.swirling-buster {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.projects {
+  padding-top: 92px;
+  padding-bottom: 46px;
+  background: rgb(247, 247, 247);
+}
+.projects h6 {
+  font-family: "Comfortaa";
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+}
+.projects p {
+  padding-top: 26px;
+  color: rgb(64, 62, 59);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.projects-block {
+  margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.projects-block-project {
+  width: 360px;
+  height: 460px;
+  position: relative;
+  background-color: rgb(236, 231, 228);
+  -webkit-box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 26px;
 }
 
 .btn-hover-effect {
@@ -531,8 +690,115 @@ body {
   width: 100%;
 }
 
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 46px;
+  padding-left: 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 6px;
+}
+
+.face1 {
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.face2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.face2 h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: rgb(64, 62, 59);
+  z-index: 10;
+}
+.face2 p {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgb(27, 26, 26);
+  z-index: 10;
+}
+
+.face2::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.face2:hover::after {
+  width: 100%;
+}
+
+.projects-block-project:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  border-radius: 6px;
+}
+
+.face-img1 {
+  background-image: url(../img/projects/1.jpg);
+}
+
+.face-img2 {
+  background-image: url(../img/projects/2.jpg);
+}
+
+.face-img3 {
+  background-image: url(../img/projects/3.jpg);
+}
+
+.face-img4 {
+  background-image: url(../img/projects/4.jpg);
+}
+
+.face-img5 {
+  background-image: url(../img/projects/5.jpg);
+}
+
+.face-img6 {
+  background-image: url(../img/projects/6.jpg);
+}
+
+.team {
+  margin-top: 92px;
+}
+
 @media (max-width: 1024px) {
-  .header-body {
+  .header {
+    display: none;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -540,7 +806,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .header-body-logotype-img {
+  .header-logotype-img {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -561,6 +827,17 @@ body {
   .home-left h2 {
     font-size: 52px;
     line-height: 64px;
+  }
+  .face2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
   }
 }
 @media (max-width: 992px) {
