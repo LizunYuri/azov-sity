@@ -7,10 +7,11 @@
     <script src="https://kit.fontawesome.com/741d6d6a0a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/loadPageAnimation.css">
+    <link rel="stylesheet" href="./css/fadeAnimationLoader.css">
     <title>АкваТехПласт | Строительство бассейнов для гостиниц</title>
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header fade-in-top-start" id="header">
         <div class="container">
             <div class="row">
                 <div class="col header-body">
@@ -65,9 +66,9 @@
                         <p>Современный гостиничный бизнес стремится предлагать своим клиентам нечто большее, чем просто уютные номера и хорошее обслуживание. Чтобы выделиться на фоне конкурентов и привлечь больше гостей, владельцам отелей стоит задуматься о создании уникальной атмосферы и повышении комфорта для своих клиентов. Одним из лучших решений в этом плане станет строительство бассейна.</p>
                         <button class="btn-hover-effect">Узнать подробнее...</button>
                     </div>
-                    <!-- <div class="col-lg-6 col-md-12 height-100 height-right">
-                        <img class="home-img-media" src="./img/6.jpg" alt="first">
-                    </div> -->
+                    <div id="mobil-image-fade" class="col-lg-6 col-md-12 height-100 height-right right fade-in-right-start">
+                        <img class="home-img-media home-img-media-block" src="./img/6.jpg" alt="first">
+                    </div>
                 </div>
             </div>
         </section>
@@ -76,27 +77,27 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
                         <div class="row">
-                            <div class="col-lg-4 col-md-12">
+                            <div class="col-lg-4 col-md-12 flick-in">
                                 <h3>Почему это стоит вложений</h3>
                             </div>
                             <div class="col-lg-8 col-md-12">
-                                <div class="firm-block">
+                                <div class="firm-block fade-animation-loader-right">
                                     <h4>Увеличение времени пребывания гостей</h4>
                                     <p>Наличие бассейна может существенно увеличить среднее время пребывания гостей в вашем отеле. Уютный и комфортный уголок для отдыха, где можно проводить время с детьми, устраивать вечерние посиделки или просто наслаждаться солнечными днями, способствует тому, что клиенты предпочитают оставаться дольше.</p>
                                 </div>
-                                <div class="firm-block">
+                                <div class="firm-block fade-animation-loader-left">
                                     <h4>Возможности для дополнительного дохода</h4>
                                     <p>Вы можете организовывать платные мероприятия, такие как вечеринки, корпоративы, свадебные торжества и другие события. Кроме того, можно предложить услуги по аренде шезлонгов, продажу напитков и закусок на территории бассейна.</p>
                                 </div>
-                                <div class="firm-block">
+                                <div class="firm-block fade-animation-loader-right">
                                     <h4> Конкурентное преимущество</h4>
                                     <p>В условиях жесткой конкуренции на рынке гостиничных услуг наличие бассейна становится важным конкурентным преимуществом. Отели, предлагающие своим гостям доступ к бассейну, всегда будут предпочтительнее для отдыхающих, чем те, у кого такого удобства нет.</p>
                                 </div>
-                                <div class="firm-block">
+                                <div class="firm-block fade-animation-loader-left">
                                     <h4>Большая продолжительность сезона</h4>
                                     <p>Бассейн может быть оборудован подогревом, что позволяет гостям пользоваться им значительно больший период времени, независимо от погодных условий.</p>
                                 </div>
-                                <div class="firm-boss">
+                                <div class="firm-boss fade-animation-loader-bottom">
                                     <div class="firm-boss-img">
                                         <img src="./img/Screenshot_1.png" alt="boss">
                                     </div>
@@ -117,8 +118,8 @@
                     <div class="row height-100">
                         <div class="col-lg-9 height-100 display-visible"></div>
                         <div class="col-lg-3 col-md-12 height-100 redding-body">
-                        <h4>Свяжитесь с нами</h4>
-                        <a class="btn-hover-effect" href="tel:+7 938 479-63-01">Не ждите пока конкуренты Вас опередят</a> 
+                        <h4 class="split-text">Свяжитесь с нами</h4>
+                        <a class="btn-hover-effect shuter-text" href="tel:+7 938 479-63-01">Не ждите пока конкуренты Вас опередят</a> 
                         </div>
                     </div>
                 </div>
@@ -128,8 +129,8 @@
         <section class="process" id="process">
             <div class="container">
                 <div class="row">
-                    <h4>Три шага</h4>
-                    <p>Всего три шага до вашего бассейна</p>
+                    <h4 class="fade-animation-loader-top">Три шага</h4>
+                    <p class="fade-animation-loader-top">Всего три шага до вашего бассейна</p>
                     <div class="process-steps">
                         <div class="process-step">
                             <div class="icon">
@@ -168,8 +169,8 @@
                     <div class="row height-100">
                         <div class="col-lg-9 height-100 display-visible"></div>
                         <div class="col-lg-3 col-md-12 height-100 redding-body">
-                            <h4>Проверенные партнеры</h4>
-                            <a class="btn-hover-effect" href="tel:+7 938 479-63-01">Работаем с лидерами индустрии строительства бассейнов</a> 
+                            <h4 class="split-text">Проверенные партнеры</h4>
+                            <a class="btn-hover-effect  shuter-text" href="tel:+7 938 479-63-01">Работаем с лидерами индустрии строительства бассейнов</a> 
                         </div>
                     </div>
                 </div>
@@ -219,8 +220,8 @@
                 <div class="container height-100">
                     <div class="row height-100">
                         <div class="col-lg-3 col-md-12 height-100 redding-body">
-                            <h4> успешно завершили более 1000 проектов</h4>
-                            <a class="btn-hover-effect" href="tel:+7 938 479-63-01">Работаем с 2006 года и заслужили репутацию надежного и профессионального партнера</a> 
+                            <h4 class=" split-text"> успешно завершили <br>более 1000 проектов</h4>
+                            <a class="btn-hover-effect shuter-text" href="tel:+7 938 479-63-01">Работаем с 2006 года и заслужили репутацию надежного и профессионального партнера</a> 
                         </div>
                         <div class="col-lg-9 height-100 display-visible"></div>
                         
@@ -347,12 +348,12 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="touch-content-title">
                             <h6>Акватехпласт</h6>
-                            <p>Если вы все еще сомневаетесь, стоит ли строить бассейн или нет, просто...</p>
+                            <p class="shuter-text">Если вы все еще сомневаетесь, стоит ли строить бассейн или нет, просто позвоните нам</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 touch-content-title">
                         <div class="touch-link">
-                            <a class="btn-hover-effect" href="tel:+7 938 479-63-01">Позвоните нам</a>
+                            <a class="btn-hover-effect split-text" href="tel:+7 938 479-63-01">Позвоните нам</a>
                         </div>
                     </div>
                 </div>
@@ -395,6 +396,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
     <script src="./script/scrollToTop.js"></script>
+    <script src="./script/fadeAnimationEffect.js"></script>
     <script src="./script/loadPageAnimation.js"></script>
     <script src="./script/hoverNavEffect.js"></script>
 </body>

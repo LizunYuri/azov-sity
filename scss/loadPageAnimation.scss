@@ -12,12 +12,19 @@
     overflow: hidden;
 }
 
-.fade-in-left-finish{
-    opacity: 1;
-    transform: translateX(0);
+.fade-in-top-start{
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(-50px);
+    overflow: hidden;
 }
 
 .fade-in-right-finish{
     opacity: 1;
     transform: translateX(0);
+}
+
+.fade-in-top-finish{
+    opacity: 1;
+    transform: translateY(0);
 }
