@@ -6,7 +6,25 @@ const elementsShuter = document.querySelectorAll('.shuter-text');
 const elementsFedeInBottom = document.querySelectorAll('.fade-animation-loader-bottom');
 const elementsFadeInTop = document.querySelectorAll('.fade-animation-loader-top');
 
+const steps = document.getElementById('steps');
+const stepEffectAnimated = document.querySelectorAll('.step-effect-animated');
 
+const priorBody = document.getElementById('prior-body');
+const priorBodyAnimated = document.querySelectorAll('.prior-body-animated');
+
+const priorImg = document.getElementById('prior-img');
+const priorEffectAnimated = document.querySelectorAll('.prior-effect-animated')
+
+const projectsBlock = document.getElementById('projects-block');
+const projectsBlockFace = document.querySelectorAll('.face-animated');
+
+const teamCard = document.getElementById('team-card');
+const teamCardAnimated = document.querySelectorAll('.tean-card-animated');
+
+const team = document.getElementById('team');
+const teamAnimated = document.querySelectorAll('.team-animated');
+
+const footer = document.getElementById('footer');
 
 const scrollEffect = (block, effect, timing) => {
     anyElementFadeIn = true;
@@ -58,12 +76,139 @@ const scrollEffectSplit = (blocks) => {
     });
 };
 
+const effectStepBlock = (block, 
+    animatedBlocks, 
+    effect, 
+    timing,
+    delay,
+    percent) => {
+    anyElementFadeIn = false;
+
+    
+    const position = block.getBoundingClientRect();
+    const positionCenter = position.top + (position.height * percent);
+
+    if (positionCenter < innerHeight) {
+        animatedBlocks.forEach((e, index) => {
+            setTimeout(() => {
+                e.classList.add(effect);
+                anyElementFadeIn = true;
+                
+            }, delay + (index * timing));
+
+            
+        });
+        
+    }
+};
+
+const footerAnimation = () => {
+
+    const position = footer.getBoundingClientRect();
+    const positionCenter = position.top + (position.height * 0.8);
+
+
+    setTimeout(() => {
+        footer.classList.add('fade-in-bottom')
+    }, 500)
+}
+
+
 window.addEventListener('scroll', () => {
-    scrollEffect(elementsFadeInRight, 'fade-in-right', 1500);
-    scrollEffectSplit(elementsSplitText);
-    scrollEffect(elementsFlickIn, 'flick-in-block', 500);
-    scrollEffect(elementsFadeInLeft, 'fade-in-left', 1500);
-    scrollEffect(elementsShuter, 'shuter', 1000);
-    scrollEffect(elementsFedeInBottom, 'fade-in-bottom', 1000);
-    scrollEffect(elementsFadeInTop, 'fade-in-top', 1000)
+
+    scrollEffect(
+        elementsFadeInRight, 
+        'fade-in-right', 
+        500
+    );
+
+    scrollEffectSplit(
+        elementsSplitText
+    );
+
+    scrollEffect(
+        elementsFlickIn, 
+        'flick-in-block', 
+        500
+    );
+
+    scrollEffect(
+        elementsFadeInLeft, 
+        'fade-in-left', 
+        500
+    );
+
+    scrollEffect(
+        elementsShuter, 
+        'shuter', 
+        1000
+    );
+
+    scrollEffect(
+        elementsFedeInBottom, 
+        'fade-in-bottom', 
+        500
+    );
+
+    scrollEffect(
+        elementsFadeInTop, 
+        'fade-in-top', 
+        500
+    );
+
+    effectStepBlock(
+        steps,
+        stepEffectAnimated, 
+        'step-opacity', 
+        300, 
+        300, 
+        0.3
+    );
+
+    effectStepBlock(
+        priorBody,
+        priorBodyAnimated,
+        'step-opacity',
+        1000,
+        1000, 
+        0.3,
+    )
+
+    
+    effectStepBlock(
+        priorImg, 
+        priorEffectAnimated, 
+        'step-opacity', 
+        1000, 
+        300,
+        0.4
+    );
+
+    effectStepBlock(
+        projectsBlock,
+        projectsBlockFace,
+        'step-opacity', 
+        1000, 
+        300, 
+        0.3
+    );
+
+    effectStepBlock(
+        team,
+        teamAnimated,
+        'step-opacity',
+        1000,
+        300,
+        0.4
+    )
+
+    effectStepBlock(
+        teamCard,
+        teamCardAnimated, 
+        'step-opacity', 
+        500, 
+        300, 
+        0.3
+    );
+    footerAnimation()
 });

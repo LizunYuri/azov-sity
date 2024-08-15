@@ -60,6 +60,7 @@ input, button {
 body {
   scroll-behavior: smooth;
   background-color: rgb(255, 255, 255);
+  position: relative;
 }
 
 .hover-effect {
@@ -204,35 +205,6 @@ body {
       -ms-transform: scale(1.01);
           transform: scale(1.01);
 }
-.header-body-mobil {
-  display: none;
-}
-.header-body-mobil > .burger {
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  cursor: pointer;
-}
-.header-body-mobil > .burger > .toggle {
-  width: 100%;
-  height: 5px;
-  background: rgb(64, 62, 59);
-  border-radius: 20%;
-}
 
 .home {
   position: relative;
@@ -333,6 +305,7 @@ body {
 }
 .firm-block {
   margin-top: 45px;
+  margin-left: 23px;
 }
 .firm-block h4 {
   font-family: "Golos";
@@ -431,6 +404,7 @@ body {
 .redding-body h4 {
   width: 80%;
   margin-bottom: 23px;
+  cursor: pointer;
   font-family: "Golos";
   font-size: 14px;
   letter-spacing: 2px;
@@ -1040,8 +1014,6 @@ body {
   left: 100px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-animation: pulse 3s infinite linear;
-          animation: pulse 3s infinite linear;
   display: none;
 }
 .to-top:hover {
@@ -1120,7 +1092,7 @@ body {
   #decktop {
     display: none;
   }
-  #mobil {
+  #mobil-nav {
     display: block;
   }
   .reverse-block {

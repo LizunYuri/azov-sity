@@ -3,7 +3,16 @@
 .fade-animation-loader-bottom,
 .flick-in,
 .shuter-text,
-.fade-animation-loader-top {
+.fade-animation-loader-top,
+.step-effect-animated,
+.effect-animated-garagraph,
+.face-animated,
+.prior-effect-animated,
+.prior-body-animated,
+.tean-card-animated,
+.split-text,
+.team-animated, 
+.footer {
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -164,6 +173,35 @@
         
     0% {
         transform:translateY(-20px);
+        opacity:0;
+    }
+    100% {
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+.step-opacity{
+    opacity: 1;
+}
+
+.fade-in-bottom{
+    opacity: 1;
+    animation-name: fade-in-bottom-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+
+@keyframes fade-in-bottom-animation {
+        
+    0% {
+        transform:translateY(200px);
         opacity:0;
     }
     100% {

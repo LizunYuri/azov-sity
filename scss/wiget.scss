@@ -1,0 +1,52 @@
+.wiget{
+    z-index: 90;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    &-circle-top{
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(64, 62, 59, 1);
+        transition: all .5s ease;
+        animation: pulse 3s infinite linear;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+    }
+    &-circle{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: red;
+        transition: all .5s ease;
+        z-index: 95;
+        animation: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        filter:invert(0) contrast(100%); 
+    }
+    50%{
+        transform: scale(1.1);
+        filter:invert(50%) contrast(50%);
+        z-index: 91;
+    }
+    100%{
+        transform: scale(1);
+        filter:invert(0) contrast(100%); 
+    }
+}

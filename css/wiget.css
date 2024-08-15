@@ -1,0 +1,96 @@
+.wiget {
+  z-index: 90;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.wiget-circle-top {
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(64, 62, 59);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: pulse 3s infinite linear;
+          animation: pulse 3s infinite linear;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 90;
+}
+.wiget-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: red;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 95;
+  -webkit-animation: none;
+          animation: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: invert(50%) contrast(50%);
+            filter: invert(50%) contrast(50%);
+    z-index: 91;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: invert(50%) contrast(50%);
+            filter: invert(50%) contrast(50%);
+    z-index: 91;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: invert(0) contrast(100%);
+            filter: invert(0) contrast(100%);
+  }
+}
