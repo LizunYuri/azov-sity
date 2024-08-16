@@ -1,62 +1,59 @@
 .wiget{
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     right: 50px;
+    z-index: 90;
     &-circle{
-        
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        &-inside{
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: rgba(27, 26, 26, .7);
+            position: relative;
+            display: block;
+            cursor: pointer;
+            &>.icon{
+                display: block;
+                position: absolute;
+                font-size: 35px;
+                font-weight: 300;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgba(255, 255, 255, 1);
+                transition: all .9s ease;
+
+            }
+        }
+    }
+
+    &-body{
+        width: 58px;
+        height: 300px;
+        background: rgba(255, 255, 255, .7);
+        border: 3px solid rgba(27, 26, 26, .2);
+        margin-bottom: 10px;
+        transition: all 1s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        font-size: 35px;
+        color: rgba(27, 26, 26, 1);
+    }
+    &-link{
+        cursor: pointer;
     }
 }
+.icon-opacity{
+    opacity: 0;
+}
 
-
-// .wiget{
-//     z-index: 90;
-//     position: fixed;
-//     bottom: 50px;
-//     right: 50px;
-//     &-circle-top{
-//         position: absolute;
-//         bottom: 0;
-//         left: -50px;
-//         width: 60px;
-//         height: 60px;
-//         border-radius: 50%;
-//         background: rgba(64, 62, 59, 1);
-//         transition: all .5s ease;
-//         animation: pulse 3s infinite linear;
-//         cursor: pointer;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         z-index: 90;
-//     }
-//     &-circle{
-//         position: absolute;
-//         width: 50px;
-//         height: 50px;
-//         border-radius: 50%;
-//         background: red;
-//         transition: all .5s ease;
-//         z-index: 95;
-//         animation: none;
-//         cursor: pointer;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-// }
-
-// @keyframes pulse {
-//     0%{
-//         transform: scale(1);
-//         filter:invert(0) contrast(100%); 
-//     }
-//     50%{
-//         transform: scale(1.1);
-//         filter:invert(50%) contrast(50%);
-//         z-index: 91;
-//     }
-//     100%{
-//         transform: scale(1);
-//         filter:invert(0) contrast(100%); 
-//     }
-// }
+.wiget-body-opacity{
+    display: none;
+}

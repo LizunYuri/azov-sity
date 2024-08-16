@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./css/loadPageAnimation.css">
     <link rel="stylesheet" href="./css/fadeAnimationLoader.css">
     <link rel="stylesheet" href="./css/customModal.css">
-   
-    <!-- <link rel="stylesheet" href="./css/wiget.css"> -->
+    <link rel="stylesheet" href="./css/wiget.css">
     <title>АкваТехПласт | Строительство бассейнов для гостиниц</title>
 </head>
 <body>
@@ -365,6 +364,27 @@
             </div>
         </div>
     </footer>
+    <div class="wiget">
+        <div id="wiget-body" class="wiget-body wiget-body-opacity">
+            <i onclick="openModalWindow()" class="fas fa-comment wiget-link"></i>
+            <a href="https://wa.me/79384796301">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+               <i class="fa-brands fa-telegram"></i> 
+            </a>
+            <a href="mailto:bassein23@yandex.ru">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+        <div class="wiget-circle" id="wiget-circle" onclick="wigetShowClick()">
+            <div class="wiget-circle-inside">
+                <i class="fa-brands fa-whatsapp icon icon-animated"></i>
+                <i class="fa-brands fa-telegram icon icon-animated"></i> 
+                <i class="fa-regular fa-envelope icon icon-animated"></i>
+            </div>
+        </div>
+    </div>
     <div class="mobil-nav" id="mobil-nav">
         <div class="burger-body"> 
             <div class="burger-nav">
@@ -426,17 +446,13 @@
             </form>
         </div>
     </div>
-    <div class="wiget">
-        <div class="wiget-circle-top">
-            <div class="wiget-circle"></div>
-        </div>
-    </div>
     <script src="./script/scrollToTop.js"></script>
     <script src="./script/fadeAnimationEffect.js"></script>
     <script src="./script/loadPageAnimation.js"></script>
     <script src="./script/hoverNavEffect.js"></script>
     <script src="./script/customModal.js"></script>
     <script src="./script/burgerMenu.js"></script>
+    <script src="./script/wiget.js"></script>
     <!-- <script src="./script/sendFormTelegram.js"></script> -->
 </body>
 </html>

@@ -16,6 +16,7 @@ const toggleAnimation = () => {
     burgerBody.classList.toggle('burger-active');
     mobilNav.classList.toggle('fixed')
 
+    
     secondToggle.classList.toggle('toggle-one');
     firstToggle.classList.toggle('toggle-two');
     lastToggle.classList.toggle('toggle-theree');
