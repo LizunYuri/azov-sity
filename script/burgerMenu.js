@@ -1,18 +1,26 @@
 const toggle = document.querySelectorAll('.toggle');
 const burgerButton = document.querySelector('.header-body-mobil');
+const burgerBody = document.querySelector('.burger-body')
+const mobilNav = document.querySelector('.mobil-nav');
+
 
 const toggleAnimation = () => {
     const firstToggle = toggle[0];
     const secondToggle = toggle[1];
-    const lastToggle = toggle[2]; // исправлено на lastToggle
+    const lastToggle = toggle[2];
 
-    // Используем toggle, чтобы переключать классы
+    
     secondToggle.classList.toggle('toggle-opacity');
     firstToggle.classList.toggle('toggle-first');
     lastToggle.classList.toggle('toggle-last');
-    // burgerButton.classList.add('position-fixed');
+    burgerBody.classList.toggle('burger-active');
+    mobilNav.classList.toggle('fixed')
 
-    console.log('click')
+    secondToggle.classList.toggle('toggle-one');
+    firstToggle.classList.toggle('toggle-two');
+    lastToggle.classList.toggle('toggle-theree');
+
+    
 }
 
 const burgerClick = () => {

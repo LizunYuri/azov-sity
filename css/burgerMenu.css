@@ -11,6 +11,7 @@
   position: relative;
   margin-top: 50px;
   margin-right: 50px;
+  z-index: 98;
 }
 .mobil-nav > .burger > .toggle {
   width: 100%;
@@ -52,10 +53,59 @@
 }
 
 .toggle-last {
-  bottom: calc(50% - 2.5px);
+  bottom: 50%;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.burger-body {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  padding-top: 80px;
+  z-index: 90;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.burger-body > .footer-left {
+  -webkit-filter: contrast(300%);
+          filter: contrast(300%);
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.burger-nav {
+  margin-top: 100px;
+  padding-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.burger-nav-block {
+  text-align: right;
+  margin-bottom: 26px;
+  font-size: 20px;
+}
+.burger-nav > .header-body-decktop-block {
+  margin-left: 35px;
+  margin-top: 46px;
+}
+
+.burger-active {
+  display: block;
+}
+
+.mobil-nav.fixed {
+  position: fixed;
 }
